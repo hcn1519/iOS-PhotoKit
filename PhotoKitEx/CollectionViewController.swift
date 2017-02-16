@@ -47,6 +47,7 @@ class CollectionViewController: UICollectionViewController {
         return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        (segue.destination as! ViewController).image = (sender as! CollectionViewCell).imageView.image!
+        let indexPath = self.collectionView?.indexPath(for: sender as! CollectionViewCell)
+        (segue.destination as! ViewController).asset = self.assetsFetchResults[indexPath!.row]
     }
 }
