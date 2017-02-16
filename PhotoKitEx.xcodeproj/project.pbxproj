@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E300F921E55605C00C62608 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E300F911E55605C00C62608 /* PhotosUI.framework */; };
+		7E300F941E55605C00C62608 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E300F931E55605C00C62608 /* Photos.framework */; };
+		7E300F971E55605C00C62608 /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E300F961E55605C00C62608 /* PhotoEditingViewController.swift */; };
+		7E300F9A1E55605C00C62608 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E300F981E55605C00C62608 /* MainInterface.storyboard */; };
+		7E300F9E1E55605C00C62608 /* ApplyEffect.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7E300F8F1E55605C00C62608 /* ApplyEffect.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7E403BBF1E53F80E00476FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E403BBE1E53F80E00476FBA /* AppDelegate.swift */; };
 		7E403BC11E53F80E00476FBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E403BC01E53F80E00476FBA /* ViewController.swift */; };
 		7E403BC41E53F80E00476FBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E403BC21E53F80E00476FBA /* Main.storyboard */; };
@@ -18,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7E300F9C1E55605C00C62608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E403BB31E53F80E00476FBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E300F8E1E55605C00C62608;
+			remoteInfo = ApplyEffect;
+		};
 		7E403BD01E53F80E00476FBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7E403BB31E53F80E00476FBA /* Project object */;
@@ -27,7 +39,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7E300FA21E55605C00C62608 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7E300F9E1E55605C00C62608 /* ApplyEffect.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7E300F8F1E55605C00C62608 /* ApplyEffect.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ApplyEffect.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E300F911E55605C00C62608 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		7E300F931E55605C00C62608 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		7E300F961E55605C00C62608 /* PhotoEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingViewController.swift; sourceTree = "<group>"; };
+		7E300F991E55605C00C62608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7E300F9B1E55605C00C62608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E403BBB1E53F80E00476FBA /* PhotoKitEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoKitEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E403BBE1E53F80E00476FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E403BC01E53F80E00476FBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +75,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7E300F8C1E55605C00C62608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E300F921E55605C00C62608 /* PhotosUI.framework in Frameworks */,
+				7E300F941E55605C00C62608 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E403BB81E53F80E00476FBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,11 +101,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E300F901E55605C00C62608 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E300F911E55605C00C62608 /* PhotosUI.framework */,
+				7E300F931E55605C00C62608 /* Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E300F951E55605C00C62608 /* ApplyEffect */ = {
+			isa = PBXGroup;
+			children = (
+				7E300F961E55605C00C62608 /* PhotoEditingViewController.swift */,
+				7E300F981E55605C00C62608 /* MainInterface.storyboard */,
+				7E300F9B1E55605C00C62608 /* Info.plist */,
+			);
+			path = ApplyEffect;
+			sourceTree = "<group>";
+		};
 		7E403BB21E53F80E00476FBA = {
 			isa = PBXGroup;
 			children = (
 				7E403BBD1E53F80E00476FBA /* PhotoKitEx */,
 				7E403BD21E53F80E00476FBA /* PhotoKitExTests */,
+				7E300F951E55605C00C62608 /* ApplyEffect */,
+				7E300F901E55605C00C62608 /* Frameworks */,
 				7E403BBC1E53F80E00476FBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +136,7 @@
 			children = (
 				7E403BBB1E53F80E00476FBA /* PhotoKitEx.app */,
 				7E403BCF1E53F80E00476FBA /* PhotoKitExTests.xctest */,
+				7E300F8F1E55605C00C62608 /* ApplyEffect.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +184,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7E300F8E1E55605C00C62608 /* ApplyEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E300FA11E55605C00C62608 /* Build configuration list for PBXNativeTarget "ApplyEffect" */;
+			buildPhases = (
+				7E300F8B1E55605C00C62608 /* Sources */,
+				7E300F8C1E55605C00C62608 /* Frameworks */,
+				7E300F8D1E55605C00C62608 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplyEffect;
+			productName = ApplyEffect;
+			productReference = 7E300F8F1E55605C00C62608 /* ApplyEffect.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7E403BBA1E53F80E00476FBA /* PhotoKitEx */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E403BD81E53F80E00476FBA /* Build configuration list for PBXNativeTarget "PhotoKitEx" */;
@@ -128,10 +208,12 @@
 				7E403BB71E53F80E00476FBA /* Sources */,
 				7E403BB81E53F80E00476FBA /* Frameworks */,
 				7E403BB91E53F80E00476FBA /* Resources */,
+				7E300FA21E55605C00C62608 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7E300F9D1E55605C00C62608 /* PBXTargetDependency */,
 			);
 			name = PhotoKitEx;
 			productName = PhotoKitEx;
@@ -166,6 +248,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "홍창남";
 				TargetAttributes = {
+					7E300F8E1E55605C00C62608 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = W6XUQ3PPN9;
+						ProvisioningStyle = Automatic;
+					};
 					7E403BBA1E53F80E00476FBA = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = W6XUQ3PPN9;
@@ -194,11 +281,20 @@
 			targets = (
 				7E403BBA1E53F80E00476FBA /* PhotoKitEx */,
 				7E403BCE1E53F80E00476FBA /* PhotoKitExTests */,
+				7E300F8E1E55605C00C62608 /* ApplyEffect */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7E300F8D1E55605C00C62608 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E300F9A1E55605C00C62608 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E403BB91E53F80E00476FBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +315,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7E300F8B1E55605C00C62608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E300F971E55605C00C62608 /* PhotoEditingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7E403BB71E53F80E00476FBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +345,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7E300F9D1E55605C00C62608 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E300F8E1E55605C00C62608 /* ApplyEffect */;
+			targetProxy = 7E300F9C1E55605C00C62608 /* PBXContainerItemProxy */;
+		};
 		7E403BD11E53F80E00476FBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7E403BBA1E53F80E00476FBA /* PhotoKitEx */;
@@ -249,6 +358,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7E300F981E55605C00C62608 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E300F991E55605C00C62608 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		7E403BC21E53F80E00476FBA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -268,6 +385,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7E300F9F1E55605C00C62608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W6XUQ3PPN9;
+				INFOPLIST_FILE = ApplyEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.PhotoKitEx.ApplyEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7E300FA01E55605C00C62608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W6XUQ3PPN9;
+				INFOPLIST_FILE = ApplyEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hcn1519.PhotoKitEx.ApplyEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		7E403BD61E53F80E00476FBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -364,6 +507,7 @@
 		7E403BD91E53F80E00476FBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W6XUQ3PPN9;
 				INFOPLIST_FILE = PhotoKitEx/Info.plist;
@@ -377,6 +521,7 @@
 		7E403BDA1E53F80E00476FBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W6XUQ3PPN9;
 				INFOPLIST_FILE = PhotoKitEx/Info.plist;
@@ -420,6 +565,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7E300FA11E55605C00C62608 /* Build configuration list for PBXNativeTarget "ApplyEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E300F9F1E55605C00C62608 /* Debug */,
+				7E300FA01E55605C00C62608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7E403BB61E53F80E00476FBA /* Build configuration list for PBXProject "PhotoKitEx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -436,6 +589,7 @@
 				7E403BDA1E53F80E00476FBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E403BDB1E53F80E00476FBA /* Build configuration list for PBXNativeTarget "PhotoKitExTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +598,7 @@
 				7E403BDD1E53F80E00476FBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
