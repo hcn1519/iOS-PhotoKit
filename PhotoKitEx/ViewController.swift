@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var image: UIImage = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        imageView.image = image
+        
+        let effectBtn: UIBarButtonItem = UIBarButtonItem(title: "효과", style: UIBarButtonItemStyle.plain, target: self, action: #selector(applyEffect))
+        self.navigationItem.rightBarButtonItem = effectBtn
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func applyEffect() {
+        // 버튼 클릭시 일어나는 action 연결
     }
-
-
 }
 
