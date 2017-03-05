@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ApplyEffect.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>PhotoKitEx.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7E300F8E1E55605C00C62608</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7E403BBA1E53F80E00476FBA</key>
 		<dict>
 			<key>primary</key>
